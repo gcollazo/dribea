@@ -2,6 +2,7 @@ html, body {
   margin:0;
   text-align:center;
   background:#FFF;
+  font-family: Helvetica, "Helvetica Neue", sans-serif;
 }
 
 ul {
@@ -20,4 +21,33 @@ img {
   height:16px;
   width:16px;
   margin:20px 0px;
+}
+
+.navigation-item {
+  display:inline-block;
+  width: 32.67187%;
+}
+
+.navigation-link {
+  display: inline-block;
+  padding: 20px 0;
+  width:100%;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.navigation-link:hover {
+  background-color: #fcfcfc;
+}
+
+.navigation-link.active {
+  fill: #4cb8ff;
+  color: #4cb8ff;
+}
+
+.navigation-top {
+  width: 100%;
+  border-bottom: 1px solid #f3f3f3;
 }
