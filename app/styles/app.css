@@ -30,7 +30,7 @@ img {
 
 .navigation-link {
   display: inline-block;
-  padding: 20px 0;
+  padding: 30px 0;
   width:100%;
   color: #000;
   text-decoration: none;
@@ -45,6 +45,10 @@ img {
 .navigation-link.active {
   fill: #4cb8ff;
   color: #4cb8ff;
+}
+
+.navigation-link-text {
+  margin: 7px 0 0 0;
 }
 
 .navigation-top {
