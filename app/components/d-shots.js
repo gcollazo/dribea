@@ -14,7 +14,7 @@ var DShotsComponent = Ember.Component.extend(ScrollingMixin, {
           feed = this.get('feed'),
           page = this.get('page');
 
-      var url = 'http://api.dribbble.com/shots/' + feed + '/?page=' + page + '&callback=?';
+      var url = 'https://api.dribbble.com/shots/' + feed + '/?page=' + page + '&callback=?';
 
       Ember.$.getJSON(url, function(data) {
         self.shots.pushObjects(data.shots);
