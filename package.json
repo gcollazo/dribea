@@ -10,7 +10,7 @@
     "start": "ember server",
     "build": "ember build",
     "test": "ember test",
-    "publish": "ember build --environment production && git subtree push --prefix dist origin gh-pages"
+    "deploy": "ember build --environment production && git subtree push --prefix dist origin gh-pages"
   },
   "repository": "https://github.com/stefanpenner/ember-cli",
   "engines": {
