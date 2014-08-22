@@ -29,3 +29,6 @@ For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](h
 * `ember build --environment production`
 * `git subtree push --prefix dist origin gh-pages`
 
+Or use the shortcut
+
+* `npm run deploy`
