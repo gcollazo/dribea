@@ -1,11 +1,3 @@
-<ul>
-  {{#each shots}}
-    <li><a {{bind-attr href=this.url}} target="_blank"><img {{bind-attr src=this.image_url}}></a><li>
-  {{/each}}
-
-  {{#if isLoadingMore}}
-    <li>
-      <img src="http://i.imgur.com/0Hgfwyu.gif" alt="Loading..." title="Loading..." class="spinner">
-    </li>
-  {{/if}}
-</ul>
+{{#each shots}}
+  <a {{bind-attr href=this.url}} target="_blank"><img {{bind-attr src=this.image_url}}></a>
+{{/each}}

@@ -1,17 +1,19 @@
-var ScrollingMixin = Em.Mixin.create({
+import Ember from 'ember';
+
+var ScrollingMixin = Ember.Mixin.create({
 
   bindScrolling: function() {
     var onScroll = function() {
       Ember.run.debounce(this, this.scrolled(), 1000);
     }.bind(this);
 
-    $(document).bind('touchmove', onScroll);
-    $(window).bind('scroll', onScroll);
+    Ember.$(document).bind('touchmove', onScroll);
+    Ember.$(window).bind('scroll', onScroll);
   },
 
   unbindScrolling: function() {
-    $(window).unbind('scroll');
-    $(document).unbind('touchmove');
+    Ember.$(window).unbind('scroll');
+    Ember.$(document).unbind('touchmove');
   }
 
 });

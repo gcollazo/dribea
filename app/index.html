@@ -4,12 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dribea</title>
-    <meta name="description" content="Minimal dribbble">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link href="images/d.ico" rel="icon" />
-    <link href="images/d.png" rel="apple-touch-icon-precomposed" />
 
     {{BASE_TAG}}
 
@@ -18,11 +14,13 @@
   </head>
   <body>
     <script>
-      window.ENV = {{ENV}};
+      window.DribeaENV = {{ENV}};
+      window.EmberENV = window.DribeaENV.EmberENV;
     </script>
+    <script src="assets/vendor.js"></script>
     <script src="assets/dribea.js"></script>
     <script>
-      window.Dribea = require('dribea/app')['default'].create(ENV.APP);
+      window.Dribea = require('dribea/app')['default'].create(DribeaENV.APP);
     </script>
   </body>
 </html>

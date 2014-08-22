@@ -4,25 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dribea</title>
-    <meta name="description" content="Minimal dribbble">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link href="images/d.ico" rel="icon" />
-    <link href="images/d-326307dc6a695d98bb6b9310f06bf6d3.png" rel="apple-touch-icon-precomposed" />
 
-    <base href="/dribea/" />
+    <base href="/" />
 
-    <link rel="stylesheet" href="assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
-    <link rel="stylesheet" href="assets/dribea-21579095291b3264af1ecc7d560d7ea2.css">
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/dribea.css">
   </head>
   <body>
     <script>
-      window.ENV = {"baseURL":"/dribea","FEATURES":{},"APP":{}};
+      window.DribeaENV = {"environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
+      window.EmberENV = window.DribeaENV.EmberENV;
     </script>
-    <script src="assets/dribea-82cf700fa7f3d6d7158e0d9e6bef9128.js"></script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/dribea.js"></script>
     <script>
-      window.Dribea = require('dribea/app')['default'].create(ENV.APP);
+      window.Dribea = require('dribea/app')['default'].create(DribeaENV.APP);
     </script>
   </body>
 </html>
