@@ -26,5 +26,6 @@ For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](h
 
 ## Publish to GitHub Pages
 
+* `ember build --environment production`
 * `git subtree push --prefix dist origin gh-pages`
 
