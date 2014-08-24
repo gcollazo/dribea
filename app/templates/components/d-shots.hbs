@@ -1,3 +1,7 @@
+{{#if isLoadingMore}}
+  <div class="loading">Loading...</div>
+{{/if}}
+
 {{#each shots}}
   <a {{bind-attr href=this.url}} target="_blank"><img {{bind-attr src=this.image_url}}></a>
 {{/each}}

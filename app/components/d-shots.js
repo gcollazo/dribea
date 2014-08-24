@@ -2,7 +2,7 @@ import Ember from 'ember';
 import ScrollingMixin from '../mixins/scrolling';
 
 var DShotsComponent = Ember.Component.extend(ScrollingMixin, {
-  page: 1,
+  page: 0,
   isLoadingMore: false,
 
   getMore: function() {
@@ -25,6 +25,7 @@ var DShotsComponent = Ember.Component.extend(ScrollingMixin, {
   },
 
   didInsertElement: function() {
+    this.getMore();
     this.bindScrolling();
   },
 
